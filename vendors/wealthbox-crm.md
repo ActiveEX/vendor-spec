@@ -661,6 +661,45 @@ Wealthbox offers three partnership tiers (from /partnerships page):
 4. **Independent Ownership (No Ecosystem Conflict):** Owned by Starburst Labs, not portfolio management vendor (unlike Redtail/Orion, SmartOffice/SS&C); avoids potential conflicts or pressure to use specific portfolio systems
 5. **Free White-Glove Migration Service:** CRM data migration assistance included with all plans (not upsell or premium service); removes major barrier to switching from legacy systems; dedicated migration specialists, data validation, post-migration support
 
+
+## Newly Discovered Vendors
+
+As part of researching Wealthbox CRM, the following vendors were discovered from the integration directory. These have been **added to the Trello research queue** for future detailed analysis:
+
+**Portfolio Management:** Addepar, AdviceCloud, AssetBook, Black Diamond, Blueleaf, BridgeFT, Capitect, CircleBlack, Deepvest, Flourish, Fispoke, Invent, Investipal, Max, Milemarker, Morningstar Office, Orion, Panoramix, Smartdata, Tamarac, Turnqey, Wove
+
+**Custodial Platforms:** Altruist, AssetMark, Axos Advisor Services, Betterment, Charles Schwab, Fidelity, LPL Financial, SEI, TradePMR
+
+**Financial Planning:** Asset-Map, eMoney, Envestnet, FP Alpha, fpPathfinder, Healthpilot, Holistiplan, MoneyGuide, Optivice, RightCapital, Sora, TIFIN Wealth, Voyant, WealthVision
+
+**Marketing Tools:** AdvisorStream, Anasova, AWeber, Bento Engine, Catchlight, Constant Contact, Corporate Merch, Couplr AI, Financial Media Exchange, Financial Seminar Services, FMG Suite, Indyfin, Lead Pilot, Leadcenter, LeadsBridge, Levitate, MailChimp, ReachStack, ReferTrac, Snappy Kraken, Testimonial IQ, TIFIN Clout, Unitifi, WEALTHAWK, WealthFeed
+
+**AI Assistants:** Bloks, CogniCor, DataDasher, FastTrackr AI, FinMate AI, Fireflies, Focal, Hazel, Jump, Laxis, Mili, Quin, Responsive, Uptiq, Vitals AI, Zeplyn, Zocks
+
+**Onboarding & Form Tools:** Dispatch, Docupace, Docusign, Finpace, Forms Logic, Formstack, Laser App, OnBord, PreciseFP, Pulse360, Quik!, SurveyMonkey, VRGL, Wealthsnap, Wufoo
+
+**Communication Tools:** CurrentClient, Econiq, Fynancial, Google, GoToMeeting, Intulse, Knudge, Lightspeed Voice, MyRepChat, Qwil Messenger, RingCentral, Simplii, Smith.ai, Strety, Twilio, Yext
+
+**Calendar & Scheduling:** Calendly, FreeBusy, Greminders, iCalendar, OnceHub, Outlook, YouCanBook.Me
+
+**Document Storage:** Box, Dropbox, Egnyte, Evernote, Flextract, Google Drive, OneDrive, Citrix ShareFile
+
+**Billing:** Smart Kx
+
+**Insurance:** Annuities Genius, BackNine, White Swan
+
+**Risk Analysis:** Andes, Atlas Point, DataPoints, Nitrogen, RiXtrema, Tolerisk
+
+**Estate Planning:** Estately, Trust & Will, Wealth.com, Yourefolio
+
+**Voice Dictation:** Copytalk, Mobile Assistant
+
+**Compliance:** Comply
+
+**Automation Platforms:** Integrately, Integromat, Zapier
+
+**Other:** Hubly, Slack
+
 ## References
 
 ### Official Resources

@@ -664,7 +664,43 @@ Wealthbox offers three partnership tiers (from /partnerships page):
 
 ## Newly Discovered Vendors
 
-As part of researching Wealthbox CRM, the following vendors were discovered from the integration directory. These have been **added to the Trello research queue** for future detailed analysis:
+As part of researching Wealthbox CRM, **150+ vendors** were discovered from the integration directory. These have been **added to the Trello research queue** (processed on 2026-02-11) for future detailed analysis:
+
+**Portfolio Management (22):** Addepar, AdviceCloud, AssetBook, Black Diamond, Blueleaf, BridgeFT, Capitect, CircleBlack, Deepvest, Flourish, Fispoke, Invent, Investipal, Max, Milemarker, Morningstar Office, Orion, Panoramix, Smartdata, Tamarac, Turnqey, Wove
+
+**Custodial Platforms (9):** Altruist, AssetMark, Axos Advisor Services, Betterment, Charles Schwab, Fidelity, LPL Financial, SEI, TradePMR
+
+**Financial Planning (14):** Asset-Map, eMoney, Envestnet, FP Alpha, fpPathfinder, Healthpilot, Holistiplan, MoneyGuide, Optivice, RightCapital, Sora, TIFIN Wealth, Voyant, WealthVision
+
+**Marketing Tools (24):** AdvisorStream, Anasova, AWeber, Bento Engine, Catchlight, Constant Contact, Corporate Merch, Couplr AI, Financial Media Exchange, Financial Seminar Services, FMG Suite, Indyfin, Lead Pilot, Leadcenter, LeadsBridge, Levitate, MailChimp, ReachStack, ReferTrac, Snappy Kraken, Testimonial IQ, TIFIN Clout, Unitifi, WEALTHAWK, WealthFeed
+
+**AI Assistants (16):** Bloks, CogniCor, DataDasher, FastTrackr AI, FinMate AI, Fireflies, Focal, Hazel, Jump, Laxis, Mili, Quin, Responsive, Uptiq, Vitals AI, Zeplyn, Zocks
+
+**Onboarding & Form Tools (14):** Dispatch, Docupace, Docusign, Finpace, Forms Logic, Formstack, Laser App, OnBord, PreciseFP, Pulse360, Quik!, SurveyMonkey, VRGL, Wealthsnap, Wufoo
+
+**Communication Tools (16):** CurrentClient, Econiq, Fynancial, Google, GoToMeeting, Intulse, Knudge, Lightspeed Voice, MyRepChat, Qwil Messenger, RingCentral, Simplii, Smith.ai, Strety, Twilio, Yext
+
+**Calendar & Scheduling (7):** Calendly, FreeBusy, Greminders, iCalendar, OnceHub, Outlook, YouCanBook.Me
+
+**Document Storage (7):** Box, Dropbox, Egnyte, Evernote, Flextract, Google Drive, OneDrive, Citrix ShareFile
+
+**Billing (1):** Smart Kx
+
+**Insurance (3):** Annuities Genius, BackNine, White Swan
+
+**Risk Analysis (6):** Andes, Atlas Point, DataPoints, Nitrogen, RiXtrema, Tolerisk
+
+**Estate Planning (4):** Estately, Trust & Will, Wealth.com, Yourefolio
+
+**Voice Dictation (2):** Copytalk, Mobile Assistant
+
+**Compliance (1):** Comply
+
+**Automation Platforms (3):** Integrately, Integromat, Zapier
+
+**Other (2):** Hubly, Slack
+
+**Total: 151 vendors added to Trello queue**
 
 **Portfolio Management:** Addepar, AdviceCloud, AssetBook, Black Diamond, Blueleaf, BridgeFT, Capitect, CircleBlack, Deepvest, Flourish, Fispoke, Invent, Investipal, Max, Milemarker, Morningstar Office, Orion, Panoramix, Smartdata, Tamarac, Turnqey, Wove
 

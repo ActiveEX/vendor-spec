@@ -254,7 +254,15 @@
       "file": "vendors/ss-c-globeop.md",
       "last_updated": "2026-02-12",
       "note": "Sub-agent completed research but unable to write vendor file (file write limitation)."
+    },
+    {
+      "name": "SmartRIA",
+      "slug": "smartria",
+      "status": "complete",
+      "file": "vendors/smartria.md",
+      "last_updated": "2026-02-12",
+      "note": "Complete. Comprehensive research with 7+ integrations documented."
     }
   ],
-  "last_sync": "2026-02-12T12:10:00-05:00"
+  "last_sync": "2026-02-12T13:25:00-05:00"
 }

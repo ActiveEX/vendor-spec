@@ -156,9 +156,414 @@ Bloks is an AI-powered relationship intelligence platform designed for relations
 
 ## Integration Overview
 
-**Total Integrations:** 10+ native integrations
+**Total Integrations:** 14 native integrations
 
-Bloks provides native CRM integrations with one-click sync capability and preview-before-push functionality. Integration architecture emphasizes data ownership (master data stays with customer) and clean, structured data transfer.
+Bloks provides native CRM integrations with one-click sync capability and preview-before-push functionality. Integration architecture emphasizes data ownership (master data stays with customer) and clean, structured data transfer. All integrations operate through local device processing, eliminating the need for visible meeting bots and preserving privacy.
+
+**Integration Philosophy:**
+- Master knowledge base stays in customer tenant (data ownership model)
+- CRM integrations use "see-before-sync" preview (no surprises)
+- Meeting platforms captured via local recording (no bots joining calls)
+- Calendar sync enables automatic meeting detection and context gathering
+- Mobile apps extend capture to in-person meetings
+
+---
+
+## Key Integrations (Detailed)
+
+### 1. Salesforce (CRM)
+
+**Type:** Native Integration  
+**Direction:** One-way (Bloks → Salesforce) with read access for record matching  
+
+**What it does:**  
+Syncs meeting summaries, action items, and extracted relationship intelligence to Salesforce contacts, accounts, and opportunities. Automatically matches people/companies from Bloks knowledge base to existing Salesforce records or creates new ones.
+
+**Data synced:**
+- Meeting summaries (attached to Activity records)
+- Contact details (auto-enriched from calls/emails/web)
+- Company insights (revenue, metrics, stakeholders)
+- Action items (converted to Tasks)
+- Custom field mapping (configurable per org)
+
+**Setup complexity:** Medium  
+- Requires Salesforce admin to authorize OAuth connection
+- Field mapping configuration (5-15 minutes)
+- User training on see-before-sync workflow (10 minutes)
+
+**Limitations:**
+- No real-time sync (push happens post-meeting, not during)
+- Custom object support limited to standard API-accessible objects
+- Bulk sync not available (one meeting at a time)
+
+**Documentation:** https://www.bloks.app/product (requires account for detailed setup guide)
+
+---
+
+### 2. Affinity (CRM)
+
+**Type:** Native Integration  
+**Direction:** Bi-directional (Bloks ↔ Affinity)  
+
+**What it does:**  
+Syncs meeting intelligence to Affinity's relationship intelligence platform, designed for venture capital, private equity, and investment banking workflows. Automatically updates deal pipelines, relationship strength scores, and interaction history.
+
+**Data synced:**
+- Meeting notes and summaries (linked to Affinity Persons/Organizations)
+- Interaction timestamps (updates "last contact" tracking)
+- Relationship strength signals (call frequency, sentiment)
+- Deal-stage updates (extracted from conversation context)
+- List additions (auto-tag contacts based on meeting topics)
+
+**Setup complexity:** Easy  
+- OAuth 2.0 connection (2 minutes)
+- Auto-mapping to existing Affinity records (minimal configuration)
+- Template selection for deal notes format
+
+**Limitations:**
+- Affinity account required (not available for non-VC/PE users)
+- Limited support for custom field schemas
+- No bulk historical import (only forward-sync from connection date)
+
+**Documentation:** https://www.bloks.app/product (Affinity partnership announced 2024)
+
+---
+
+### 3. Wealthbox (CRM)
+
+**Type:** Native Integration  
+**Direction:** One-way (Bloks → Wealthbox) with read access  
+
+**What it does:**  
+Syncs meeting notes, client intelligence, and compliance-ready summaries to Wealthbox CRM for financial advisors. Designed for RIA workflows with FINRA/SEC compliance requirements.
+
+**Data synced:**
+- Meeting summaries (attached to Wealthbox Activities)
+- Client profile updates (family details, goals, preferences)
+- Compliance records (timestamped, immutable meeting logs)
+- Task creation (action items from calls)
+- Document attachments (meeting transcripts if enabled)
+
+**Setup complexity:** Easy  
+- OAuth connection (2 minutes)
+- Auto-match to existing Wealthbox contacts
+- No custom field mapping required (uses Wealthbox standard schema)
+
+**Limitations:**
+- Read-only access to Wealthbox data (no bi-directional sync)
+- No portfolio/account data sync (CRM-only, not custodian integration)
+- Requires Premium or Enterprise Bloks tier
+
+**Documentation:** https://www.prweb.com/releases/bloks-launches-wealthbox-integration-302477738.html  
+**Launch Date:** June 2025
+
+---
+
+### 4. HubSpot (CRM) - BETA
+
+**Type:** Native Integration (Beta)  
+**Direction:** One-way (Bloks → HubSpot)  
+
+**What it does:**  
+Syncs meeting notes and contact enrichment data to HubSpot CRM, targeting sales and marketing teams. Beta status indicates limited feature availability and ongoing development.
+
+**Data synced:**
+- Meeting summaries (attached to HubSpot Engagement records)
+- Contact properties (job title, company, LinkedIn URL)
+- Deal notes (extracted from sales conversations)
+- Tasks (action items from calls)
+
+**Setup complexity:** Medium  
+- OAuth 2.0 connection
+- Portal/pipeline configuration required
+- Beta opt-in (requires email to Bloks support)
+
+**Limitations:**
+- **Beta status:** Feature set incomplete, may have bugs
+- Limited custom property support
+- No workflow automation triggers (manual sync only)
+- May require Bloks Enterprise tier for production use
+
+**Documentation:** https://www.bloks.app/product (beta access via support request)
+
+---
+
+### 5. Microsoft Dynamics 365 (CRM)
+
+**Type:** Native Integration  
+**Direction:** One-way (Bloks → Dynamics) with read access  
+
+**What it does:**  
+Syncs meeting intelligence to Microsoft Dynamics 365 Sales and Customer Service modules. Designed for enterprise teams already in Microsoft ecosystem.
+
+**Data synced:**
+- Meeting notes (attached to Dynamics Activities)
+- Contact/Account updates (enriched fields)
+- Opportunity notes (deal-related conversation insights)
+- Task creation (action items)
+- Timeline entries (interaction history)
+
+**Setup complexity:** Hard  
+- Requires Dynamics admin to configure Azure AD app registration
+- Field mapping setup (15-30 minutes)
+- Permission scoping (read/write access per entity)
+- User training on Dynamics-specific workflow
+
+**Limitations:**
+- Requires Dynamics 365 Sales or higher SKU (not available for Essentials)
+- Custom entity support requires manual configuration
+- No support for Dynamics On-Premise (cloud-only)
+
+**Documentation:** https://www.bloks.app/product (requires account for setup guide)
+
+---
+
+### 6. Google Workspace (Calendar)
+
+**Type:** Native Calendar Sync  
+**Direction:** Read-only (Google Calendar → Bloks)  
+
+**What it does:**  
+Syncs calendar events from Google Workspace to enable automatic meeting detection, pre-meeting briefs, and post-meeting summary delivery. Multi-account support allows syncing personal + work calendars.
+
+**Data synced:**
+- Meeting titles, times, attendees
+- Event locations (Zoom links, physical addresses)
+- Recurring event patterns
+- Calendar availability (for scheduling context)
+
+**Setup complexity:** Easy  
+- OAuth 2.0 connection (1 minute)
+- Select which calendars to sync (personal, shared, team)
+- Auto-detect meeting platforms (Zoom, Meet, Teams)
+
+**Limitations:**
+- Read-only (Bloks does not write back to Google Calendar)
+- No access to calendar event descriptions (privacy protection)
+- Requires internet connection for sync (no offline mode)
+
+**Documentation:** Built into Bloks onboarding flow
+
+---
+
+### 7. Microsoft Office 365 (Calendar)
+
+**Type:** Native Calendar Sync  
+**Direction:** Read-only (Outlook Calendar → Bloks)  
+
+**What it does:**  
+Syncs Outlook/Office 365 calendar events to enable automatic meeting detection and pre-meeting context. Supports both Exchange Online and Office 365 Business/Enterprise accounts.
+
+**Data synced:**
+- Meeting invites (title, time, attendees)
+- Teams meeting links (auto-detected for recording)
+- Recurring meeting patterns
+- Shared calendar events (if permissions allow)
+
+**Setup complexity:** Easy  
+- OAuth connection via Microsoft identity platform (2 minutes)
+- Multi-account support (work + personal)
+- Auto-detection of Teams meetings
+
+**Limitations:**
+- Read-only (no calendar event creation from Bloks)
+- Requires modern authentication (legacy Exchange not supported)
+- No access to email inbox (calendar-only)
+
+**Documentation:** Built into Bloks onboarding flow
+
+---
+
+### 8. Zoom (Meeting Platform)
+
+**Type:** Local Capture (not API integration)  
+**Direction:** One-way (Zoom audio → Bloks)  
+
+**What it does:**  
+Captures Zoom meeting audio via local device recording (system-level audio capture on Mac/Windows). Auto-detects when Zoom meetings start/stop, records with studio-grade quality, and transcribes conversations.
+
+**Data synced:**
+- Audio recording (processed locally, not uploaded to Zoom)
+- Speaker identification (based on Zoom participant list if available)
+- Meeting metadata (title, time, attendees from calendar sync)
+
+**Setup complexity:** Easy  
+- System audio permissions (Mac: Screen Recording; Windows: Microphone)
+- Auto-start/stop configuration (2 minutes)
+- No Zoom API credentials required
+
+**Limitations:**
+- No meeting bot visibility (invisible to participants, but also no remote recording if device is off)
+- Requires Bloks app running during meeting (no cloud backup)
+- Speaker identification less accurate than bot-based tools (relies on heuristics)
+
+**Documentation:** https://www.bloks.app/install (setup guide for Mac/Windows)
+
+---
+
+### 9. Microsoft Teams (Meeting Platform)
+
+**Type:** Local Capture  
+**Direction:** One-way (Teams audio → Bloks)  
+
+**What it does:**  
+Captures Microsoft Teams meeting audio via local recording. Auto-detects Teams meetings from calendar sync and starts recording when call begins.
+
+**Data synced:**
+- Audio recording (local processing)
+- Meeting metadata (from Office 365 calendar)
+- Participant names (if available via Teams API or calendar invite)
+
+**Setup complexity:** Easy  
+- System audio permissions
+- Teams meeting auto-detection via Office 365 calendar sync
+- No Teams admin approval required (client-side capture)
+
+**Limitations:**
+- No compliance recording (not suitable for regulated industries requiring centralized recording)
+- Invisible to participants (no bot notification, but also no remote backup)
+- Requires Bloks app running on meeting host's device
+
+**Documentation:** https://www.bloks.app/install
+
+---
+
+### 10. Google Meet (Meeting Platform)
+
+**Type:** Local Capture  
+**Direction:** One-way (Meet audio → Bloks)  
+
+**What it does:**  
+Captures Google Meet meeting audio via local recording. Auto-detects Meet meetings from Google Calendar sync.
+
+**Data synced:**
+- Audio recording (local processing)
+- Meeting metadata (from Google Calendar)
+- Participant names (from calendar invite)
+
+**Setup complexity:** Easy  
+- System audio permissions
+- Auto-detection via Google Calendar sync
+- No Google Workspace admin approval required
+
+**Limitations:**
+- No Google Meet recording integration (separate from Google Meet's native recording)
+- Invisible to participants (no bot join notification)
+- Requires Bloks app running during meeting
+
+**Documentation:** https://www.bloks.app/install
+
+---
+
+### 11. Slack (Meeting Platform)
+
+**Type:** Local Capture (Slack Huddles)  
+**Direction:** One-way (Slack audio → Bloks)  
+
+**What it does:**  
+Captures Slack Huddles audio via local recording. Auto-detects when Slack Huddles start (if calendar event exists) or manual start.
+
+**Data synced:**
+- Audio recording from Slack Huddles
+- Participant names (from Slack API if authorized)
+- Channel context (if Huddle is in specific channel)
+
+**Setup complexity:** Medium  
+- System audio permissions
+- Slack workspace OAuth (optional, for participant names)
+- Manual start/stop (Huddles often spontaneous, no calendar event)
+
+**Limitations:**
+- No Slack message integration (audio-only, not Slack chat history)
+- Huddle detection unreliable without calendar sync
+- Requires Slack desktop app (not web-based Huddles)
+
+**Documentation:** https://www.bloks.app/product
+
+---
+
+### 12. Cisco Webex (Meeting Platform)
+
+**Type:** Local Capture  
+**Direction:** One-way (Webex audio → Bloks)  
+
+**What it does:**  
+Captures Cisco Webex meeting audio via local recording. Auto-detects Webex meetings from calendar sync.
+
+**Data synced:**
+- Audio recording (local processing)
+- Meeting metadata (from calendar)
+- Participant names (from Webex meeting invite)
+
+**Setup complexity:** Easy  
+- System audio permissions
+- Auto-detection via calendar sync (works with Webex meeting links)
+- No Webex admin approval required
+
+**Limitations:**
+- No Webex recording integration (separate from Webex native recording)
+- Invisible to participants (no bot join notification)
+- Requires Bloks app running during meeting
+
+**Documentation:** https://www.bloks.app/install
+
+---
+
+### 13. iOS Mobile App (In-Person Meetings)
+
+**Type:** Native Mobile Application  
+**Direction:** One-way (iOS device → Bloks cloud)  
+
+**What it does:**  
+Enables in-person meeting capture via iPhone/iPad microphone. Syncs recordings and transcripts to Bloks knowledge base for offline meetings.
+
+**Data synced:**
+- Audio recording (uploaded to Bloks cloud after meeting)
+- Manual notes taken during meeting
+- Screenshots captured via app (meeting highlights)
+- GPS location (optional, for meeting context)
+
+**Setup complexity:** Easy  
+- iOS app download (App Store)
+- Microphone permissions
+- Bloks account login (syncs with desktop)
+
+**Limitations:**
+- Requires manual start/stop (no auto-detection for in-person meetings)
+- Audio quality dependent on device microphone and room acoustics
+- No speaker identification (unless names manually tagged)
+
+**Documentation:** https://www.bloks.app/install (iOS App Store link)
+
+---
+
+### 14. Android Mobile App (In-Person Meetings)
+
+**Type:** Native Mobile Application  
+**Direction:** One-way (Android device → Bloks cloud)  
+
+**What it does:**  
+Enables in-person meeting capture via Android smartphone/tablet microphone. Syncs recordings and transcripts to Bloks knowledge base for offline meetings.
+
+**Data synced:**
+- Audio recording (uploaded to Bloks cloud after meeting)
+- Manual notes taken during meeting
+- Screenshots captured via app (meeting highlights)
+- GPS location (optional, for meeting context)
+
+**Setup complexity:** Easy  
+- Android app download (Google Play Store)
+- Microphone permissions
+- Bloks account login (syncs with desktop)
+
+**Limitations:**
+- Requires manual start/stop (no auto-detection for in-person meetings)
+- Audio quality dependent on device microphone and room acoustics
+- No speaker identification (unless names manually tagged)
+
+**Documentation:** https://www.bloks.app/install (Google Play Store link)
+
+---
 
 ---
 

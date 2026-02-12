@@ -194,10 +194,18 @@
     {
       "name": "Vanilla",
       "slug": "vanilla",
-      "status": "in_progress",
+      "status": "blocked",
       "file": "vendors/vanilla.md",
+      "last_updated": "2026-02-12",
+      "note": "Sub-agent completed extensive research but unable to write file. Research gathered from justvanilla.com website (estate planning platform with AI-powered V/AI assistant, eMoney/Black Diamond/Orion/Addepar integrations)."
+    },
+    {
+      "name": "tRx",
+      "slug": "trx",
+      "status": "in_progress",
+      "file": "vendors/trx.md",
       "last_updated": "2026-02-12"
     }
   ],
-  "last_sync": "2026-02-12T10:19:00-05:00"
+  "last_sync": "2026-02-12T10:24:00-05:00"
 }

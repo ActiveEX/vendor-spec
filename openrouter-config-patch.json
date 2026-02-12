@@ -1,0 +1,33 @@
+{
+  "env": {
+    "OPENROUTER_API_KEY": "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"
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/xiaomi/mimo-v2-flash",
+        "fallbacks": [
+          "openrouter/moonshotai/kimi-k2.5",
+          "openrouter/anthropic/claude-sonnet-4.5",
+          "openrouter/anthropic/claude-opus-4.6",
+          "Claude Sonnet 4.5",
+          "ChatGPT 5.2"
+        ]
+      },
+      "models": {
+        "openrouter/xiaomi/mimo-v2-flash": {
+          "alias": "MiMo-V2-Flash"
+        },
+        "openrouter/moonshotai/kimi-k2.5": {
+          "alias": "Kimi K2.5"
+        },
+        "openrouter/anthropic/claude-sonnet-4.5": {
+          "alias": "Claude Sonnet 4.5 (OR)"
+        },
+        "openrouter/anthropic/claude-opus-4.6": {
+          "alias": "Claude Opus 4.6"
+        }
+      }
+    }
+  }
+}

@@ -139,7 +139,50 @@
       "status": "complete",
       "file": "vendors/gotomeeting.md",
       "last_updated": "2026-02-12"
+    },
+    {
+      "name": "Bento Engine",
+      "slug": "bento-engine",
+      "status": "blocked",
+      "file": "vendors/bento-engine.md",
+      "last_updated": "2026-02-12"
+    },
+    {
+      "name": "Betterment",
+      "slug": "betterment",
+      "status": "blocked",
+      "file": "vendors/betterment.md",
+      "last_updated": "2026-02-12"
+    },
+    {
+      "name": "MoneyGuidePro",
+      "slug": "moneyguidepro",
+      "status": "blocked",
+      "file": "vendors/moneyguidepro.md",
+      "last_updated": "2026-02-12",
+      "note": "Sub-agent completed research but unable to write file. Comprehensive information gathered about Envestnet-owned financial planning platform with 44+ integrations."
+    },
+    {
+      "name": "Black Diamond",
+      "slug": "black-diamond",
+      "status": "complete",
+      "file": "vendors/black-diamond.md",
+      "last_updated": "2026-02-12"
+    },
+    {
+      "name": "YCharts",
+      "slug": "ycharts",
+      "status": "blocked",
+      "file": "vendors/ycharts.md",
+      "last_updated": "2026-02-12"
+    },
+    {
+      "name": "XLR8",
+      "slug": "xlr8",
+      "status": "complete",
+      "file": "vendors/xlr8.md",
+      "last_updated": "2026-02-12"
     }
   ],
-  "last_sync": "2026-02-12T02:45:00-05:00"
+  "last_sync": "2026-02-12T09:45:00-05:00"
 }

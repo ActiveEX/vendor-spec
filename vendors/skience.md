@@ -48,6 +48,106 @@ Skience provides a unified wealth management platform built on Salesforce, conne
 
 ---
 
-**Verification Date:** February 12, 2026  
-**Verified By:** OpenClaw AI Agent (SaaS Verification Swimlane)  
-**Next Step:** Pricing & Features Research
+## Pricing & Licensing
+
+Skience uses **custom, quote-based pricing** — no public pricing is available. Firms must contact Skience directly for a custom quote based on firm size, needs, and selected features.
+
+### Product Lines
+
+**1. Skience (ISV - Independent Software Vendor)**
+- **Requirements:** Requires active Salesforce CRM license
+- **Target Market:** Enterprise broker-dealers and large RIAs
+- **Deployment:** Custom solution built on client's Salesforce instance
+- **Implementation:** Longer timeline, requires closer collaboration with internal team
+- **Customization:** Highly customizable to meet specific firm needs
+- **Pricing:** Contact for quote (Salesforce licensing costs additional)
+
+**2. SkienceONE (OEM - Embedded License)**
+- **Requirements:** No Salesforce license required (embedded)
+- **Target Market:** Small to mid-size RIAs
+- **Deployment:** Turnkey solution, ready out-of-the-box
+- **Implementation:** Faster deployment with minimal internal support needed
+- **Customization:** Pre-configured for common advisor workflows
+- **Pricing:** Contact for quote (includes embedded Salesforce)
+
+### Product Bundles (Announced September 2022)
+
+Skience introduced three standardized product bundles designed to accelerate implementation and reduce costs compared to fully custom configurations:
+
+| Bundle | Target Audience | Key Features |
+|--------|----------------|--------------|
+| **Edge** | Smaller firms seeking essential capabilities | Core CRM, digital onboarding, multi-point data consolidation, basic integrations |
+| **Elite** | Mid-size firms needing advanced features | All Edge features + enhanced workflow automation, expanded integrations, compliance tools |
+| **Elite Plus** | Larger firms requiring comprehensive platform | All Elite features + advisor transitions, advanced surveillance, full customization options |
+
+*Note: Specific pricing and detailed feature breakdowns for bundles are not publicly available.*
+
+### Add-On Products & Services
+
+The following features are available as optional add-ons (particularly for SkienceONE users):
+
+| Add-On | Description | Pricing |
+|--------|-------------|---------|
+| **Client Portal** | Secure client access to documents, statements, and account information | Contact for pricing |
+| **Skience Safe** | Secure document storage and management solution | Contact for pricing (included in full Skience ISV) |
+
+### Free Trial
+
+No free trial publicly advertised. Firms can request a demo to evaluate the platform.
+
+### Notes on Pricing
+
+- Custom pricing based on firm size (number of advisors, AUM, client accounts)
+- Implementation costs separate from licensing
+- Consulting services available (pricing varies)
+- Costs for Skience (ISV) include Salesforce licensing fees (paid directly to Salesforce)
+- SkienceONE bundles Salesforce costs into single contract
+- Product bundles (Edge/Elite/Elite Plus) offer faster, lower-cost implementation vs. fully custom builds
+
+---
+
+## Key Features
+
+### Core Capabilities (All Tiers)
+
+- **Digital Client Onboarding:** Streamlined, paperless onboarding with e-signatures
+- **New Account Opening:** Straight-through processing for new accounts
+- **CRM Functionality:** Contact and relationship management (Salesforce-based for ISV, embedded for SkienceONE)
+- **Data Consolidation:** Daily aggregation from 200+ data sources (custodians, planning tools, etc.)
+- **Data Replication:** Bi-directional data sync with custodial and technology partners
+- **Account Servicing:** Account updates, transfers, and ongoing maintenance workflows
+- **Multi-Point Integrations:** Connect to custodians, portfolio management, financial planning, and other tools
+- **Workflow Automation:** Automated task routing, notifications, and process management
+
+### Advanced Features (Primarily Full Skience ISV)
+
+- **Compliance Audit Trails:** Comprehensive logging for regulatory oversight
+- **Regulation Best Interest (Reg BI) Tools:** Built-in compliance for Reg BI requirements
+- **Custom Integrations:** Developer tools to build custom connections to proprietary systems
+- **Advanced Reporting:** Salesforce reporting and analytics capabilities
+- **Skience Safe (Included):** Secure document vault for client records
+- **Multi-Entity Support:** Manage multiple legal entities or business lines from single platform
+
+### Enterprise-Only Features (Full Skience ISV)
+
+- **Advisor Transitions:** Tools for onboarding new advisors and migrating their books of business
+- **Skience Surveillance:** Monitoring and oversight tools for broker-dealer compliance
+- **Fully Customizable Workflows:** Tailor every process to firm's unique requirements
+- **Salesforce Ecosystem Access:** Leverage full Salesforce app marketplace and tools
+- **Dedicated Implementation Team:** White-glove service for complex enterprise deployments
+
+### Limitations
+
+- **Salesforce Dependency (ISV):** Full Skience requires Salesforce CRM license (additional cost and complexity)
+- **No Public Pricing:** Lack of transparency makes budgeting and comparison difficult
+- **Implementation Timeline:** Full Skience (ISV) requires significant time and internal resources
+- **Learning Curve:** Salesforce-based interface may require training for advisors unfamiliar with Salesforce
+- **SkienceONE Customization:** Turnkey solution offers less flexibility than full Skience ISV
+- **Add-On Costs:** Key features (Client Portal, Skience Safe for SkienceONE) require additional fees
+- **No Self-Service:** Platform requires vendor involvement for setup, configuration, and major changes
+
+---
+
+**Pricing & Features Updated:** February 12, 2026  
+**Researched By:** OpenClaw AI Agent (Pricing & Features Swimlane)  
+**Next Step:** Product Overview Research

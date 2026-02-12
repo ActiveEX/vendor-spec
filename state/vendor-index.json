@@ -182,7 +182,22 @@
       "status": "complete",
       "file": "vendors/xlr8.md",
       "last_updated": "2026-02-12"
+    },
+    {
+      "name": "Wealthcare Capital Management",
+      "slug": "wealthcare-capital-management",
+      "status": "blocked",
+      "file": "vendors/wealthcare-capital-management.md",
+      "last_updated": "2026-02-12",
+      "note": "Sub-agent completed research but unable to write file. Research gathered from wealthcaregdx.com website (goals-based wealth management platform with GDX360 process)."
+    },
+    {
+      "name": "Vanilla",
+      "slug": "vanilla",
+      "status": "in_progress",
+      "file": "vendors/vanilla.md",
+      "last_updated": "2026-02-12"
     }
   ],
-  "last_sync": "2026-02-12T09:45:00-05:00"
+  "last_sync": "2026-02-12T10:19:00-05:00"
 }

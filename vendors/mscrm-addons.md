@@ -324,6 +324,576 @@ Computer-telephony integration (CTI) connecting phone systems with Dynamics 365 
 
 **Note:** mscrm-addons has officially deprecated this product but continues to support existing customers. Organizations seeking CTI solutions should explore alternative providers.
 
+
+## Integration Overview
+
+mscrm-addons.com provides deep integration capabilities across the Microsoft ecosystem and select third-party services. The company's solutions are built specifically for Microsoft Dynamics 365 and Power Platform, with native connectors and extensive automation capabilities.
+
+**Total Integration Categories:** 7 major categories (Microsoft Platform, Storage, E-Signature, Printing, Workflow Automation, Development, External Data)
+
+### Integration Architecture
+
+- **Native Microsoft Integrations:** REST API communication with Dynamics 365 and Power Platform services
+- **Certified Connectors:** Microsoft-verified Power Platform connectors
+- **Third-Party Integrations:** Direct API integrations with Adobe Sign, cloud print providers
+- **Storage Integrations:** Azure Blob Storage, SharePoint, on-premise file systems
+- **Authentication:** Azure AD, OAuth 2.0, API key-based authentication
+
+## Key Integrations
+
+### 1. Microsoft Dynamics 365 (All Customer Engagement Modules)
+
+**Type:** Native Integration  
+**Direction:** Bi-directional  
+**What it does:** Core platform integration enabling document generation, attachment management, and activity tracking across all Dynamics 365 Customer Engagement applications.
+
+**Data Synced:**
+- Entity records (Accounts, Contacts, Leads, Opportunities, Cases, etc.)
+- Custom entities and fields
+- Notes and attachments
+- Email activities
+- Template associations
+- User security roles and permissions
+
+**Setup Complexity:** Medium  
+DocumentsCorePack requires service configuration with Dynamics 365 connection profile, including:
+- Azure Application User setup for authentication
+- Security role assignment for users
+- Solution deployment to Dynamics 365 environment
+- API key generation for connector access
+
+**Modules Supported:**
+- Dynamics 365 Sales
+- Dynamics 365 Customer Service
+- Dynamics 365 Marketing
+- Dynamics 365 Field Service
+- Dynamics 365 Project Service Automation
+- Custom Dynamics 365 applications
+
+**Limitations:**
+- Requires licensed DocumentsCorePack service (14-day free trial available)
+- Per-user licensing model for subscription deployments
+- On-premise deployments require separate perpetual licenses
+
+**Documentation:** [https://www.mscrm-addons.com/Products/DocumentsCorePack](https://www.mscrm-addons.com/Products/DocumentsCorePack)
+
+---
+
+### 2. Microsoft Power Automate
+
+**Type:** Certified Connector (Premium)  
+**Direction:** Bi-directional  
+**What it does:** Provides 25+ actions for full document automation within Power Automate workflows, enabling no-code document generation, processing, and delivery workflows.
+
+**Data Synced:**
+- Document generation requests
+- Template selections
+- Document content (base64 encoded)
+- DocumentJob status and results
+- Print job configurations
+- E-signature requests
+- SharePoint folder creation requests
+
+**Setup Complexity:** Easy  
+Requires API key from DocumentsCorePack service configuration. Connector is pre-certified and available in all Power Automate environments.
+
+**Key Actions Available (25+ total):**
+- **Document Generation:**  
+  - Create document (sync/async)
+  - Create DocumentJob (async)
+  - Create Multipart document (sync/async)
+  - Get document templates
+
+- **Document Processing:**  
+  - Concatenate two DocumentJobs
+  - Concatenate two documents (PDF, DOCX)
+  - Print DocumentJob
+  - Print file
+  - Sign DocumentJob (e-signature)
+
+- **Attachment & Delivery:**  
+  - Attach DocumentJob to email
+  - Attach DocumentJob as note
+  - Attach file to email
+  - Attach file as note
+  - Send email (Dataverse)
+
+- **SharePoint:**  
+  - Create SharePoint folder
+  - Save to integrated SharePoint
+
+- **Batch Processing:**  
+  - Process batch in customer journey (sync/async)
+
+- **Support Actions:**  
+  - Get DocumentJob result
+  - Get DocumentJob status
+  - Get One-Click-Actions
+  - Get Printers
+  - Who am I (API key info)
+
+**Limitations:**
+- Premium connector (requires Power Automate Premium license)
+- API rate limit: 1200 calls per connection per 60 seconds
+- Requires DocumentsCorePack service subscription or perpetual license
+- Not available in China Cloud operated by 21Vianet
+
+**Documentation:** [https://learn.microsoft.com/en-us/connectors/documentscorepackapi/](https://learn.microsoft.com/en-us/connectors/documentscorepackapi/)
+
+---
+
+### 3. Microsoft Power Apps
+
+**Type:** Certified Connector (Premium)  
+**Direction:** Bi-directional  
+**What it does:** Enables canvas apps and model-driven apps to generate and process documents directly from Power Apps interfaces using the same connector actions available in Power Automate.
+
+**Data Synced:**
+- Document generation requests from app interfaces
+- Template selections via app dropdowns
+- User input via prompts
+- Document content returned to apps
+- Printer selections
+- One-Click-Action triggers
+
+**Setup Complexity:** Easy  
+Uses the same DocumentsCorePack connector as Power Automate. Requires API key configuration and Premium Power Apps license.
+
+**Use Cases:**
+- Custom document generation apps for sales teams
+- Self-service portals for document creation
+- Mobile document generation on field devices
+- Approval workflows with document attachments
+- Client-facing document request forms
+
+**Limitations:**
+- Premium connector (requires Power Apps Premium license)
+- Shares API rate limits with Power Automate (1200 calls/60 sec per connection)
+- Not available in China Cloud
+
+**Documentation:** [https://support.mscrm-addons.com/knowledgebase/the-documentscorepack-connector-for-microsoft-flow-and-powerapps/](https://support.mscrm-addons.com/knowledgebase/the-documentscorepack-connector-for-microsoft-flow-and-powerapps/)
+
+---
+
+### 4. Microsoft Power Pages
+
+**Type:** Native Integration  
+**Direction:** One-way (Power Pages → DocumentsCorePack)  
+**What it does:** Allows external-facing Power Pages portals to generate documents directly from web forms and portal interactions.
+
+**Data Synced:**
+- Portal form submissions
+- Dataverse records created via portals
+- User input from portal pages
+- Generated documents returned to portal users
+
+**Setup Complexity:** Medium  
+Requires Power Pages portal configuration, DocumentsCorePack connector setup, and portal-to-Dataverse authentication.
+
+**Use Cases:**
+- Customer self-service document generation (quotes, applications, certificates)
+- Partner portals with custom document creation
+- Public-facing forms generating personalized documents
+- Onboarding workflows with automated document delivery
+
+**Limitations:**
+- Requires authenticated portal users for most scenarios
+- Portal API limits apply
+- Document generation happens server-side (not instant for large documents)
+
+**Documentation:** [https://www.mscrm-addons.com/](https://www.mscrm-addons.com/) (Power Pages integration mentioned on main site)
+
+---
+
+### 5. Microsoft Copilot
+
+**Type:** Native Integration  
+**Direction:** Bi-directional  
+**What it does:** Adds AI-driven document processing to Copilot workflows in Dynamics 365, enabling natural language document generation requests and intelligent template suggestions.
+
+**Data Synced:**
+- Copilot user prompts
+- Template recommendations
+- Document generation triggers
+- AI-processed document content
+
+**Setup Complexity:** Medium  
+Requires Dynamics 365 Copilot license, DocumentsCorePack service, and Copilot configuration for document automation scenarios.
+
+**Use Cases:**
+- "Generate a proposal for this opportunity" (natural language command)
+- AI-suggested templates based on context
+- Automated document workflows triggered by Copilot insights
+- Intelligent document field population
+
+**Limitations:**
+- Requires Dynamics 365 Copilot license (additional cost)
+- Copilot features depend on Microsoft availability in region
+- AI suggestions require training data and template library
+
+**Documentation:** [https://www.mscrm-addons.com/](https://www.mscrm-addons.com/) (Copilot integration mentioned on main site)
+
+---
+
+### 6. Microsoft Dataverse
+
+**Type:** Native Integration  
+**Direction:** Bi-directional  
+**What it does:** Direct integration with Dataverse for reading entity data, storing generated documents as notes, and managing attachments. AttachmentExtractor moves attachments from Dataverse to external storage to reduce capacity costs.
+
+**Data Synced:**
+- Entity records and custom tables
+- Notes (annotations)
+- Email attachments
+- File attachments
+- Activity records
+- Security roles and permissions
+- Document metadata
+
+**Setup Complexity:** Easy  
+Automatic integration when DocumentsCorePack service is configured for a Dynamics 365/Dataverse environment.
+
+**Key Capabilities:**
+- **DocumentsCorePack:** Reads Dataverse records, writes generated documents as notes
+- **AttachmentExtractor:** Moves email attachments and notes from Dataverse to external storage (SharePoint, Azure Blob, on-premise)
+- **Unchanged UX:** Users access attachments transparently (no impact on user experience)
+
+**Limitations:**
+- Dataverse API limits apply
+- AttachmentExtractor requires external storage configuration
+- Extracted attachments stored externally (not in Dataverse)
+
+**Documentation:** [https://support.mscrm-addons.com/knowledgebase/mscrm-addons-com-application-user-for-dynamics-365-app-access/](https://support.mscrm-addons.com/knowledgebase/mscrm-addons-com-application-user-for-dynamics-365-app-access/)
+
+---
+
+### 7. Microsoft SharePoint (2013 or Higher)
+
+**Type:** Native Integration  
+**Direction:** Bi-directional  
+**What it does:** Stores generated documents directly to SharePoint document libraries, enables AttachmentExtractor to move Dataverse attachments to SharePoint, and supports template backups to SharePoint locations.
+
+**Data Synced:**
+- Generated documents (PDF, DOCX, etc.)
+- Email attachments extracted from Dataverse
+- Note attachments extracted from Dataverse
+- Template backup files
+- Folder structures
+
+**Setup Complexity:** Medium  
+Requires SharePoint connection configuration in DocumentsCorePack service, including:
+- SharePoint site URL
+- Authentication credentials (Azure AD or SharePoint credentials)
+- Document library permissions
+- Integrated SharePoint configuration (if using Dynamics 365 integrated SharePoint)
+
+**Key Features:**
+- **Integrated SharePoint:** Uses Dynamics 365's native SharePoint integration for seamless document storage
+- **Custom SharePoint Locations:** Save documents to any SharePoint site/library
+- **Folder Creation:** Automated folder structure creation via Power Automate connector
+- **SharePoint Compatibility Connection:** Improved performance with SharePoint 2013+ via native REST endpoints
+- **Template Backups:** Scheduled backups of DocumentsCorePack templates to SharePoint
+
+**Limitations:**
+- Requires SharePoint 2013 or higher
+- SharePoint API rate limits apply
+- Folder path length maximum: 260 characters
+- Cannot mix SharePoint and on-premise storage for same environment
+
+**Documentation:** [https://support.mscrm-addons.com/knowledgebase/how-to-save-a-document-to-sharepoint-with-documentscorepack/](https://support.mscrm-addons.com/knowledgebase/how-to-save-a-document-to-sharepoint-with-documentscorepack/)
+
+---
+
+### 8. Azure Blob Storage
+
+**Type:** API Integration  
+**Direction:** One-way (mscrm-addons → Azure Blob)  
+**What it does:** Stores extracted email/note attachments and provides template backup storage to Azure Blob Storage containers.
+
+**Data Synced:**
+- Email attachments from Dataverse
+- Note attachments from Dataverse
+- DocumentsCorePack template backups
+- Document files (if configured as alternative storage)
+
+**Setup Complexity:** Medium  
+Requires:
+- Azure subscription and Blob Storage account
+- SAS URL (Shared Access Signature) for storage container
+- Container creation and permissions configuration
+- AttachmentExtractor setup with Azure Blob destination
+
+**Key Features:**
+- **Cost-Effective Storage:** Dramatically cheaper than Dataverse capacity (90%+ savings reported)
+- **Template Backups:** Scheduled automatic backups of templates to Azure Blob
+- **Scalable:** No storage limits (pay-as-you-go Azure pricing)
+- **Configurable Retention:** Set custom retention policies in Azure
+
+**Limitations:**
+- Requires Azure subscription (additional cost)
+- Files stored externally (not in Dynamics 365)
+- Requires network connectivity to Azure
+- SAS URL expiration requires periodic renewal
+
+**Documentation:** [https://support.mscrm-addons.com/documentation/gettingstarted/online-service-configuration/](https://support.mscrm-addons.com/documentation/gettingstarted/online-service-configuration/) (Cloud Backup section)
+
+---
+
+### 9. Adobe Sign
+
+**Type:** Third-Party Integration (Native Dynamics 365 Integration)  
+**Direction:** Bi-directional  
+**What it does:** DocumentsCorePack leverages Adobe Sign's native Dynamics 365 integration to send generated documents for electronic signature, track signature status, and return signed documents to Dynamics 365.
+
+**Data Synced:**
+- Generated documents sent for signature
+- Adobe Sign agreement records
+- Signature status updates
+- Signed document files
+- Signer information
+- Adobe Sign text tags in templates
+
+**Setup Complexity:** Hard  
+Requires:
+- Adobe Sign enterprise-level account with Dynamics 365 integration support
+- Adobe Sign package installation (via AppSource or on-premise)
+- Adobe Sign security role assignment in Dynamics 365
+- DocumentsCorePack templates with Adobe Sign text tags
+- Agreement entity configuration
+
+**Key Features:**
+- **Text Tag Support:** Embed Adobe Sign signature/initial fields directly in DocumentsCorePack Word templates
+- **Automated Workflows:** Power Automate connector action: "Sign DocumentJob"
+- **Multi-Signee Support:** Send documents to multiple signers with custom workflows
+- **Agreement Tracking:** Full Adobe Sign agreement history in Dynamics 365
+
+**Adobe Sign Security Roles:**
+- **Adobe Sign Reader:** Read-only access to agreement records
+- **Adobe Sign User:** User-level access (own records only)
+- **Adobe Sign Administrator:** Full access including global settings and data migration
+
+**Limitations:**
+- Requires enterprise-level Adobe Sign license (expensive)
+- Adobe Sign Dynamics 365 integration must be separately licensed
+- Text tag syntax must be manually coded in templates
+- Not all Adobe Sign features available via Dynamics integration
+
+**Documentation:** [https://support.mscrm-addons.com/knowledgebase/get-started-with-adobe-sign-for-microsoft-dynamics-365-installationconfiguration/](https://support.mscrm-addons.com/knowledgebase/get-started-with-adobe-sign-for-microsoft-dynamics-365-installationconfiguration/)
+
+---
+
+### 10. Azure Logic Apps
+
+**Type:** Certified Connector (Standard)  
+**Direction:** Bi-directional  
+**What it does:** Provides the same DocumentsCorePack connector actions available in Power Automate, enabling document automation in Azure Logic Apps workflows for enterprise integration scenarios.
+
+**Data Synced:**
+- Same as Power Automate connector (25+ actions)
+- Document generation requests
+- Document content
+- Status and result data
+
+**Setup Complexity:** Easy  
+Uses the same DocumentsCorePack API connector as Power Automate. Requires API key and Azure Logic Apps subscription.
+
+**Use Cases:**
+- Enterprise B2B document automation
+- Integration with non-Microsoft systems via Logic Apps connectors
+- Serverless document processing workflows
+- Event-driven document generation (e.g., from Azure Service Bus, Event Grid)
+
+**Limitations:**
+- Standard connector tier in Logic Apps (consumption-based pricing)
+- Not available in Azure China regions
+- Same API rate limits as Power Automate (1200 calls/60 sec)
+
+**Documentation:** [https://learn.microsoft.com/en-us/connectors/documentscorepackapi/](https://learn.microsoft.com/en-us/connectors/documentscorepackapi/)
+
+---
+
+### 11. Cloud Print Providers (3 Major Providers - Specific Names Not Publicly Disclosed)
+
+**Type:** Third-Party API Integration  
+**Direction:** One-way (mscrm-addons → Print Providers)  
+**What it does:** Integrates with three major cloud printing services to enable document printing from Dynamics 365, Power Automate, and Power Apps without requiring local printer drivers or infrastructure.
+
+**Data Synced:**
+- Document files (PDF, DOCX)
+- Print job configurations (copies, printer selection)
+- Print job status
+- Printer availability
+
+**Setup Complexity:** Medium  
+Requires:
+- Account with supported cloud print provider
+- Cloud printer configuration in DocumentsCorePack service
+- Printer assignment to Dynamics 365 users
+- Network connectivity to cloud print API
+
+**Key Features:**
+- **Power Automate Actions:** "Print DocumentJob" and "Print file" actions in connector
+- **User-Specific Printers:** Assign printers to individual users or teams
+- **Print Copies:** Configure multiple copies per print job
+- **Cross-Platform:** Print from anywhere (no VPN required for cloud printers)
+
+**Limitations:**
+- Cannot mix cloud print provider and local printers for same Dynamics 365 organization
+- Specific cloud print provider names not publicly documented (requires sales contact)
+- Cloud print provider subscription costs apply separately
+- Requires internet connectivity for printing
+
+**Documentation:** [https://support.mscrm-addons.com/knowledgebase/printing-with-documentscorepack/](https://support.mscrm-addons.com/knowledgebase/printing-with-documentscorepack/)
+
+---
+
+### 12. Local Printers (On-Premise Printing)
+
+**Type:** Native Integration  
+**Direction:** One-way (mscrm-addons → Local Printers)  
+**What it does:** Enables printing to local network printers directly from Dynamics 365 and Power Automate workflows using DocumentsCorePack's on-premise printing infrastructure.
+
+**Data Synced:**
+- Document files (PDF, DOCX)
+- Print job configurations
+- Printer queue status
+
+**Setup Complexity:** Medium  
+Requires:
+- DocumentsCorePack on-premise service deployment
+- Network printer configuration
+- Printer driver installation on DocumentsCorePack service server
+- Firewall/network access configuration
+
+**Key Features:**
+- **Direct Printer Access:** Print to local network printers without cloud intermediary
+- **Cost Savings:** No cloud print provider subscription required
+- **Low Latency:** Faster printing for high-volume scenarios
+
+**Limitations:**
+- Requires on-premise DocumentsCorePack service deployment (not available in cloud-only subscriptions)
+- Cannot mix local printers with cloud print providers for same organization
+- Network infrastructure required (VPN for remote users)
+- Printer drivers must be installed on service server
+
+**Documentation:** [https://support.mscrm-addons.com/knowledgebase/printing-with-documentscorepack/](https://support.mscrm-addons.com/knowledgebase/printing-with-documentscorepack/)
+
+---
+
+### 13. On-Premise File Storage
+
+**Type:** Native Integration  
+**Direction:** One-way (Dataverse → On-Premise Storage)  
+**What it does:** AttachmentExtractor can move email and note attachments from Dataverse to on-premise file systems (network shares, local servers) to reduce Dataverse capacity costs.
+
+**Data Synced:**
+- Email attachments from Dataverse
+- Note attachments from Dataverse
+- File metadata
+
+**Setup Complexity:** Hard  
+Requires:
+- On-premise file server or network share
+- DocumentsCorePack on-premise service deployment
+- File server permissions configuration
+- Network connectivity between Dynamics 365 and file server (VPN if cloud Dynamics 365)
+
+**Key Features:**
+- **Full Control:** Complete control over file storage location and retention
+- **Cost Savings:** No Azure/SharePoint storage costs
+- **Compliance:** Keep files on-premise for regulatory requirements
+- **Transparent UX:** Users access attachments as if still in Dataverse
+
+**Limitations:**
+- Requires on-premise DocumentsCorePack deployment
+- Network infrastructure complexity (especially for cloud Dynamics 365)
+- File server backup and maintenance responsibility
+- Latency for cloud Dynamics 365 users accessing on-premise files
+
+**Documentation:** [https://www.mscrm-addons.com/Products/AttachmentExtractor](https://www.mscrm-addons.com/Products/AttachmentExtractor)
+
+---
+
+## Integration Categories
+
+### Microsoft Platform (6 integrations)
+- Dynamics 365 (all Customer Engagement modules)
+- Power Automate (25+ actions)
+- Power Apps
+- Power Pages
+- Copilot
+- Dataverse
+
+### Storage & File Management (3 integrations)
+- SharePoint (2013+)
+- Azure Blob Storage
+- On-premise file storage
+
+### E-Signature (1 integration)
+- Adobe Sign (via native Dynamics 365 integration)
+
+### Printing (2 integrations)
+- Cloud Print Providers (3 major providers)
+- Local Printers (on-premise)
+
+### Workflow Automation (2 integrations)
+- Power Automate (certified connector)
+- Azure Logic Apps (certified connector)
+
+### Development & API (1 integration)
+- REST API (DocumentsCorePack Connector API)
+
+### External Data (1 integration)
+- JSON Data Sources (external data integration into documents)
+
+## Integration Types Available
+
+- **Native Integrations:** Dynamics 365, Dataverse, SharePoint, Power Platform services
+- **Certified Connectors:** Power Automate, Power Apps, Logic Apps (Microsoft-verified)
+- **API Integrations:** REST API for custom integrations
+- **Third-Party Integrations:** Adobe Sign, cloud print providers
+- **Storage Integrations:** Azure Blob, SharePoint, on-premise file systems
+
+## API & Developer Information
+
+### DocumentsCorePack Connector API
+
+**Base URL:** https://documentapi.mscrm-addons.com  
+**API Documentation:** [https://short.mscrm-addons.com/serviceconfigmanual](https://short.mscrm-addons.com/serviceconfigmanual)  
+**Swagger/OpenAPI:** https://documentapi.mscrm-addons.com/swagger/v1/swagger.json
+
+**Authentication:** API Key (generated from DocumentsCorePack Service Configuration)
+
+**Rate Limits:**
+- 1200 API calls per connection per 60 seconds
+- Applies to Power Automate, Power Apps, and Logic Apps connectors
+
+**Available Endpoints:**
+- Document generation (sync/async)
+- DocumentJob status and result retrieval
+- Template management
+- Printer configuration
+- E-signature workflows
+- SharePoint operations
+- Email operations
+
+**Custom Connector Support:** Yes  
+Organizations can create custom Power Automate/Power Apps connectors using the Swagger definition for specialized scenarios.
+
+**Webhook Support:** No direct webhook support; use Power Automate triggers or polling mechanisms.
+
+**SDK/Libraries:** No official SDK; REST API accessible from any HTTP-capable language/platform.
+
+## Support & Documentation
+
+- **API Documentation:** [https://short.mscrm-addons.com/serviceconfigmanual](https://short.mscrm-addons.com/serviceconfigmanual)
+- **Connector Documentation:** [https://learn.microsoft.com/en-us/connectors/documentscorepackapi/](https://learn.microsoft.com/en-us/connectors/documentscorepackapi/)
+- **Knowledge Base:** [https://support.mscrm-addons.com/](https://support.mscrm-addons.com/)
+- **Support Email:** support@mscrm-addons.com
+- **Support Hours:** 17/5 (17 hours, 5 days per week)
+- **Training:** Video tutorials on YouTube channel
+- **Community:** Partner network (700+ partners globally)
+
 ## Product Overview & Strategic Analysis
 
 ### Strengths

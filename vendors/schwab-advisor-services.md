@@ -1,7 +1,8 @@
 # Schwab Advisor Services™
 
-**Status:** SaaS Verification Complete  
+**Status:** Pricing & Features Complete  
 **Date Created:** 2026-02-12  
+**Last Updated:** 2026-02-12 11:51 AM EST  
 **Researcher:** OpenClaw AI Agent
 
 ---
@@ -730,10 +731,45 @@ Schwab Advisor Services operates as a custodian, not a traditional software subs
 
 ---
 
-## Next Steps
+## Pricing & Features Research Notes
 
-- **Final Validation:** QA check for completeness
+**Phase:** Pricing & Features (Complete)  
+**Completed:** 2026-02-12 11:51 AM EST  
+**Sources:** Official Schwab Pricing Guide for Advisor Services (January 2026), RIABiz industry reports (February 2026), InvestmentNews custodian coverage
+
+**Key Pricing Updates Documented:**
+1. **Block Desk Advanced Order Handling Fee:** NEW $5 per account fee effective March 2, 2026 (controversial among advisors per RIABiz reporting)
+2. **Schwab Advisor Network (SAN) Referral Fee Increase:** 5% increase announced February 2026 (not in this document, advisor-facing only)
+3. **Alternative Pricing Transparency:** Comprehensive documentation of negotiation factors (AUM thresholds, trading volume, research services)
+4. **Advisor Billing Model:** Wrap fee program pricing where advisor pays directly (avoids client account charges)
+5. **Industry Fee Pass-Through:** SEC Section 31 Fee, FINRA Trading Activity Fee, Options Regulatory Fee (variable, not controlled by Schwab)
+
+**Features Documented:**
+- All core custody and clearing capabilities
+- Advanced trading features (block desk, algorithmic orders, DVP/early settlement)
+- Technology platforms (iRebal®, Model Market Center™, Institutional Intelligent Portfolios, Advisor Portfolio Connect™)
+- Schwab Advisor ProDirect™ membership program details
+- Practice management and transition support services
+
+**Pricing Model Clarification:**
+- Schwab Advisor Services is NOT a SaaS subscription platform (unlike software-only vendors)
+- Revenue model: Transaction fees + service fees (custodian model)
+- No monthly/annual platform subscription fees
+- Alternative Pricing requires negotiation (not transparent upfront)
+- Best rates available to high-AUM advisors with significant asset commitments
+
+**Limitations Noted:**
+- Small advisors (<$50M AUM) may not qualify for Alternative Pricing
+- Foreign exchange markup up to 3% (higher than competitors)
+- Expensive alternative investment custody ($250/position annually)
+- New Block Desk fee ($5/account effective March 2026) controversial
 
 ---
 
-*Research Status: Integrations phase complete (with noted limitations). Ready for Final Validation.*
+## Next Steps
+
+- **Product Overview:** Deep analysis of strengths, weaknesses, use cases, differentiators, and alternatives
+
+---
+
+*Research Status: Pricing & Features phase complete. Ready for Product Overview phase.*

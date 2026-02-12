@@ -274,26 +274,26 @@
     {
       "name": "Skience",
       "slug": "skience",
-      "status": "blocked",
+      "status": "integrations_complete",
       "file": "vendors/skience.md",
       "last_updated": "2026-02-12",
-      "note": "Sub-agent completed research but unable to write vendor file (file write limitation). Initial research gathered from web search. Platform: Digital Client Onboarding & Wealth Management Platform. Key integrations found: Envestnet, Envestnet|MoneyGuide, Laser App, Quik!, DocuSign, Fidelity Wealthscape, Fidelity Clearing & Custody, Redtail. Research needs manual completion. Discovered from Black Diamond integration research. Trello card: https://trello.com/c/0HQYBXR6"
+      "note": "INTEGRATIONS COMPLETE (10:56 AM EST). 14 integrations exhaustively documented: 4 Clearing & Custody (Fidelity, Pershing, Schwab, TD Ameritrade), 2 Managed Account Platforms (Envestnet, Morningstar), 1 Financial Planning (MoneyGuidePro), 7 Technology Tools (Salesforce, Redtail, DocuSign, EVS, Quik!, RightBRIDGE, Laser App). Each integration documented with Type, Direction, What it does, Data synced, Setup complexity, Limitations, Documentation links. Additional note: 200+ data consolidation sources mentioned (not individually listed). Key finding: Bi-directional integrations with major custodians, Salesforce platform foundation enables custom integrations. GitHub: https://github.com/ActiveEX/vendor-spec/blob/main/vendors/skience.md. Commit: 99ad01e. Trello: https://trello.com/c/698d9ffdf42d93b3ab467521. Next: Final Validation."
     },
     {
       "name": "Schwab Advisor Services™",
       "slug": "schwab-advisor-services",
-      "status": "blocked",
+      "status": "verification_complete",
       "file": "vendors/schwab-advisor-services.md",
       "last_updated": "2026-02-12",
-      "note": "Sub-agent ran for 3m40s, used 262k tokens but failed to write output file (file write limitation). Research gathered includes: Schwab Advisor ProDirect membership pricing $5,250/quarter or $21,000/year, Schwab OpenView Gateway API integration, 235+ third-party tech platform integrations, iRebal portfolio rebalancing, Model Market Center, digital onboarding, custodial aggregation services, features include account opening, trading, reporting, billing solutions. Discovered from Black Diamond integration research. Trello card: https://trello.com/c/OdSJB0Lw"
+      "note": "SaaS verification complete (10:31 AM EST). RIA custodian platform with 3,000+ support professionals serving 16,000+ firms. Website verified, contact info confirmed (800-647-5465), basic profile created. GitHub: vendors/schwab-advisor-services.md. Next: Pricing & Features phase."
     },
     {
       "name": "Risclarity",
       "slug": "risclarity",
-      "status": "blocked",
+      "status": "verification_complete",
       "file": "vendors/risclarity.md",
       "last_updated": "2026-02-12",
-      "note": "Sub-agent ran for 3m25s, used 262k tokens but failed to write output file (file write limitation). Research gathered includes: Risclarity risk management platform for financial advisors, integration with major custodians, compliance features, portfolio monitoring capabilities. Discovered from Black Diamond integration research. Trello card: https://trello.com/c/hqJABxPj"
+      "note": "SaaS verification complete (10:59 AM EST). Data integration & wealth reporting platform for family offices and RIAs. Website verified (risclarity.com), contact info confirmed (contact@risclarity.com, 844-598-1100). Basic profile created. GitHub: vendors/risclarity.md. Next: Pricing & Features phase."
     },
     {
       "name": "Redtail Technology",
@@ -402,10 +402,10 @@
     {
       "name": "Bloks",
       "slug": "bloks",
-      "status": "verification_complete",
+      "status": "integrations_complete",
       "file": "vendors/bloks.md",
       "last_updated": "2026-02-12",
-      "note": "SaaS verification complete (9:49 AM EST). AI-powered relationship intelligence platform. Website verified, contact info confirmed, basic profile created. Next: Pricing & Features phase."
+      "note": "Integrations Assessment COMPLETE (10:31 AM EST). 14 integrations exhaustively documented: 5 CRM (Salesforce, Affinity, Wealthbox, HubSpot beta, Dynamics 365), 2 calendar (Google Workspace, Office 365), 5 meeting platforms (Zoom, Teams, Meet, Slack, Webex), 2 mobile (iOS, Android). Each integration documented with Type, Direction, What it does, Data synced, Setup complexity, Limitations, Documentation link. Key differentiator: Local recording (no meeting bots). File expanded from 17.1 KB to 47.1 KB. GitHub: https://github.com/ActiveEX/vendor-spec/blob/main/vendors/bloks.md. Commit: f95d584. Next: Final Validation phase."
     },
     {
       "name": "Apex Clearing",
@@ -534,7 +534,271 @@
       "file": "vendors/icontact.md",
       "last_updated": "2026-02-12",
       "note": "Discovered from XLR8 integration research. Added to queue via Queue Management cron job (2026-02-12 10:01 AM EST). Email marketing platform."
+    },
+    {
+      "name": "Advent Direct",
+      "slug": "advent-direct",
+      "status": "queue",
+      "file": "vendors/advent-direct.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from Black Diamond alternatives section. SS&C wealth management solution. Added to queue via Queue Management cron job (2026-02-12 10:06 AM EST). Trello card: https://trello.com/c/698dee81789e6177d5547eec"
+    },
+    {
+      "name": "BlackRock Aladdin",
+      "slug": "blackrock-aladdin",
+      "status": "queue",
+      "file": "vendors/blackrock-aladdin.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from Black Diamond alternatives section. Investment management platform. Added to queue via Queue Management cron job (2026-02-12 10:06 AM EST). Trello card: https://trello.com/c/698dee8111618277a81bf76e"
+    },
+    {
+      "name": "Advent Geneva",
+      "slug": "advent-geneva",
+      "status": "queue",
+      "file": "vendors/advent-geneva.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from Orion alternatives section. Institutional focus portfolio platform. Added to queue via Queue Management cron job (2026-02-12 10:06 AM EST). Trello card: https://trello.com/c/698dee828ed5cdcb59284516"
+    },
+    {
+      "name": "Affinity",
+      "slug": "affinity",
+      "status": "queue",
+      "file": "vendors/affinity.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from Bloks integration research. CRM platform for relationship-driven professionals. Added to queue via Queue Management cron job (2026-02-12 10:21 AM EST)."
+    },
+    {
+      "name": "Microsoft Teams",
+      "slug": "microsoft-teams",
+      "status": "queue",
+      "file": "vendors/microsoft-teams.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from Bloks integration research. Video conferencing platform integrated with Bloks AutoPilot. Added to queue via Queue Management cron job (2026-02-12 10:21 AM EST)."
+    },
+    {
+      "name": "Cisco Webex",
+      "slug": "cisco-webex",
+      "status": "queue",
+      "file": "vendors/cisco-webex.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from Bloks integration research. Video conferencing platform integrated with Bloks AutoPilot. Added to queue via Queue Management cron job (2026-02-12 10:21 AM EST)."
+    },
+    {
+      "name": "Google Meet",
+      "slug": "google-meet",
+      "status": "queue",
+      "file": "vendors/google-meet.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from Bloks integration research. Video conferencing platform integrated with Bloks AutoPilot. Added to queue via Queue Management cron job (2026-02-12 10:21 AM EST)."
+    },
+    {
+      "name": "Microsoft Dynamics 365",
+      "slug": "microsoft-dynamics-365",
+      "status": "queue",
+      "file": "vendors/microsoft-dynamics-365.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from Bloks integration research. Enterprise CRM platform (distinct from mscrm-addons). Native integration with Bloks. Added to queue via Queue Management cron job (2026-02-12 10:21 AM EST)."
+    },
+    {
+      "name": "FinaMetrica",
+      "slug": "finametrica",
+      "status": "queue",
+      "file": "vendors/finametrica.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). Risk tolerance assessment platform."
+    },
+    {
+      "name": "NaviPlan",
+      "slug": "naviplan",
+      "status": "queue",
+      "file": "vendors/naviplan.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). Financial planning software by Advicent (Fiserv)."
+    },
+    {
+      "name": "Folio Institutional",
+      "slug": "folio-institutional",
+      "status": "queue",
+      "file": "vendors/folio-institutional.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). Direct indexing and fractional share platform for RIAs."
+    },
+    {
+      "name": "DriveWealth",
+      "slug": "drivewealth",
+      "status": "queue",
+      "file": "vendors/drivewealth.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). API-first brokerage infrastructure for fractional investing."
+    },
+    {
+      "name": "MX",
+      "slug": "mx",
+      "status": "queue",
+      "file": "vendors/mx.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). Financial data platform and aggregation service."
+    },
+    {
+      "name": "Yodlee",
+      "slug": "yodlee",
+      "status": "queue",
+      "file": "vendors/yodlee.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). Data aggregation platform by Envestnet."
+    },
+    {
+      "name": "Portfolio Visualizer",
+      "slug": "portfolio-visualizer",
+      "status": "queue",
+      "file": "vendors/portfolio-visualizer.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). Portfolio analysis and backtesting platform."
+    },
+    {
+      "name": "Stripe",
+      "slug": "stripe",
+      "status": "queue",
+      "file": "vendors/stripe.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). Payment processing platform (widely integrated with advisor platforms)."
+    },
+    {
+      "name": "Square",
+      "slug": "square",
+      "status": "queue",
+      "file": "vendors/square.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). Payment processing platform (advisor fee collection)."
+    },
+    {
+      "name": "QuickBooks",
+      "slug": "quickbooks",
+      "status": "queue",
+      "file": "vendors/quickbooks.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). Accounting software by Intuit (widely integrated with advisor platforms)."
+    },
+    {
+      "name": "Zoho",
+      "slug": "zoho",
+      "status": "queue",
+      "file": "vendors/zoho.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from vendor integration research. Added to queue via Queue Management cron job (2026-02-12 10:26 AM EST). CRM and business software suite."
+    },
+    {
+      "name": "BridgeFT",
+      "slug": "bridgeft",
+      "status": "queue",
+      "file": "vendors/bridgeft.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from SmartRIA integration research. Financial Data Aggregation platform. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "RIA in a Box",
+      "slug": "ria-in-a-box",
+      "status": "queue",
+      "file": "vendors/ria-in-a-box.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from SmartRIA alternatives section. Comprehensive compliance platform for RIAs. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "SS&C Compliance Solutions",
+      "slug": "ss-c-compliance-solutions",
+      "status": "queue",
+      "file": "vendors/ss-c-compliance-solutions.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from SmartRIA alternatives section. Enterprise compliance software. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "Salesforce",
+      "slug": "salesforce",
+      "status": "queue",
+      "file": "vendors/salesforce.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from SmartRIA/Bloks integration research. Major CRM platform with native integrations to advisor platforms. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "Right Capital",
+      "slug": "right-capital",
+      "status": "queue",
+      "file": "vendors/right-capital.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from StratiFi integration research. Financial planning software platform. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "eMoney",
+      "slug": "emoney",
+      "status": "queue",
+      "file": "vendors/emoney.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from StratiFi/XLR8 integration research. Financial planning platform. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "Goldman Sachs",
+      "slug": "goldman-sachs",
+      "status": "queue",
+      "file": "vendors/goldman-sachs.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from StratiFi integration research. Custodian and investment platform for advisors. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "Envestnet Tamarac",
+      "slug": "envestnet-tamarac",
+      "status": "queue",
+      "file": "vendors/envestnet-tamarac.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from Black Diamond alternatives section. Competing wealth management platform for RIAs. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "Pershing",
+      "slug": "pershing",
+      "status": "queue",
+      "file": "vendors/pershing.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from XLR8 integration research. Major custodian platform. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "fpPathfinder",
+      "slug": "fppathfinder",
+      "status": "queue",
+      "file": "vendors/fppathfinder.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from XLR8 integration research. Financial planning tool and checklists. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "PreciseFP",
+      "slug": "precisefp",
+      "status": "queue",
+      "file": "vendors/precisefp.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from XLR8 integration research. CRM enhancement for client data gathering. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "LaserApp",
+      "slug": "laserapp",
+      "status": "queue",
+      "file": "vendors/laserapp.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from XLR8 integration research. Document management solution. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "Flourish",
+      "slug": "flourish",
+      "status": "queue",
+      "file": "vendors/flourish.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from XLR8 integration research. Cash management platform. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "MyRepChat",
+      "slug": "myrepchat",
+      "status": "queue",
+      "file": "vendors/myrepchat.md",
+      "last_updated": "2026-02-12",
+      "note": "Discovered from XLR8 integration research. Communication platform for advisors. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
     }
   ],
-  "last_sync": "2026-02-12T10:06:00.000000-05:00"
+  "last_sync": "2026-02-12T16:00:07Z"
 }

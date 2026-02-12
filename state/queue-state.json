@@ -1,17 +1,18 @@
 {
   "total_vendors": 187,
   "completed": 25,
-  "blocked": 21,
+  "blocked": 29,
   "in_progress": 0,
-  "remaining": 141,
-  "last_updated": "2026-02-12T13:25:00+0000",
-  "current_vendor": "",
+  "remaining": 133,
+  "last_updated": "2026-02-12T14:41:30+0000",
+  "current_vendor": null,
   "current_vendor_position": null,
   "current_vendors": [],
   "last_completed": "SmartRIA",
-  "last_blocked": "SS&C GlobeOp",
-  "api_cost_today": 0.021,
+  "last_blocked": "Plaid",
+  "api_cost_today": 0.025,
   "model": "MiMo-V2-Flash",
   "cost_threshold": 0.50,
-  "status": "active"
+  "status": "paused_critical_issue",
+  "issue": "100% sub-agent failure rate - 3 consecutive vendors (PractiFI, Powder, Plaid) all completed instantly (<200ms) with no output. Investigation needed before continuing."
 }

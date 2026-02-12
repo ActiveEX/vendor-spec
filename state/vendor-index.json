@@ -488,14 +488,6 @@
       "note": "Discovered from Annuities Genius integration research. Added to queue via Queue Management cron job."
     },
     {
-      "name": "mscrm-addons.com",
-      "slug": "mscrm-addons",
-      "status": "verification_complete",
-      "file": "vendors/mscrm-addons.md",
-      "last_updated": "2026-02-12",
-      "note": "SaaS verification complete (9:56 AM EST). Microsoft Dynamics 365 & Power Platform add-ons provider. Website verified, contact info confirmed, basic profile created. Next: Pricing & Features phase."
-    },
-    {
       "name": "Raymond James",
       "slug": "raymond-james",
       "status": "queue",
@@ -798,7 +790,15 @@
       "file": "vendors/myrepchat.md",
       "last_updated": "2026-02-12",
       "note": "Discovered from XLR8 integration research. Communication platform for advisors. Added to queue via Queue Management cron job (2026-02-12 10:36 AM EST)."
+    },
+    {
+      "name": "mscrm-addons.com",
+      "slug": "mscrm-addons",
+      "status": "overview_complete",
+      "file": "vendors/mscrm-addons.md",
+      "last_updated": "2026-02-12",
+      "note": "PRODUCT OVERVIEW COMPLETE (10:56 AM EST). Strategic analysis added with 7 Strengths, 6 Weaknesses, Use Cases (Ideal/Not Ideal), 7 Key Differentiators, 5 Alternatives with comparisons. Add-on products documented: DocumentsCorePack (main), AttachmentExtractor (storage optimization), ActivityTools, PowerSearch, SmartBar, TelephoneIntegration (DEPRECATED). Key insights: 90%+ storage cost savings, Microsoft Partner certified, 5,500+ customers, €800-€9,800/year pricing. File: 26.8KB. GitHub: https://github.com/ActiveEX/vendor-spec/blob/main/vendors/mscrm-addons.md. Commit: 5b01113. Trello: https://trello.com/c/698d9ff85718666ec7af4ff1. Next: Integration Assessment phase."
     }
   ],
-  "last_sync": "2026-02-12T16:00:07Z"
+  "last_sync": "2026-02-12T16:03:56Z"
 }

@@ -1,6 +1,22 @@
 {
   "vendors": [
     {
+      "name": "Standard and Poor's",
+      "slug": "standard-and-poors",
+      "status": "blocked",
+      "file": "vendors/standard-and-poors.md",
+      "last_updated": "2026-02-12",
+      "note": "Sub-agent completed research but unable to write vendor file (file write limitation). Research gathered from multiple sources including Wikipedia, Vendr, Salesforce AppExchange, Partnerbase, and PRNewswire articles. Comprehensive data on pricing ($30K+ per year), integrations (49+ partners), and features."
+    },
+    {
+      "name": "StratiFi Technologies Inc",
+      "slug": "stratifi-technologies-inc",
+      "status": "complete",
+      "file": "vendors/stratifi-technologies-inc.md",
+      "last_updated": "2026-02-12",
+      "note": "Complete. 25+ integrations documented. Manual creation due to sub-agent file write limitation."
+    },
+    {
       "name": "Redtail CRM",
       "slug": "redtail-crm",
       "status": "complete",
@@ -202,10 +218,43 @@
     {
       "name": "tRx",
       "slug": "trx",
-      "status": "in_progress",
+      "status": "blocked",
       "file": "vendors/trx.md",
-      "last_updated": "2026-02-12"
+      "last_updated": "2026-02-12",
+      "note": "Sub-agent researched for 7+ hours (spawned 10:24 AM EST, still running at 5:25 AM) but unable to write vendor file. File write limitation pattern affecting multiple vendors. Research gathered from Morningstar Total Rebalance Expert (tRx) website. Issue: Sub-agent stuck in research phase, unable to complete file output. Research needs to be completed manually."
+    },
+    {
+      "name": "Timelineapp Tech Limited",
+      "slug": "timelineapp-tech-limited",
+      "status": "blocked",
+      "file": "vendors/timelineapp-tech-limited.md",
+      "last_updated": "2026-02-12",
+      "note": "Sub-agent completed research but unable to write vendor file (file write limitation)."
+    },
+    {
+      "name": "TIFIN Risk",
+      "slug": "tifin-risk",
+      "status": "blocked",
+      "file": "vendors/tifin-risk.md",
+      "last_updated": "2026-02-12",
+      "note": "Sub-agent completed research but unable to write vendor file (file write limitation)."
+    },
+    {
+      "name": "Telemet Orion",
+      "slug": "telemet-orion",
+      "status": "blocked",
+      "file": "vendors/telemet-orion.md",
+      "last_updated": "2026-02-12",
+      "note": "Sub-agent completed research but unable to write vendor file (file write limitation)."
+    },
+    {
+      "name": "SS&C GlobeOp",
+      "slug": "ss-c-globeop",
+      "status": "blocked",
+      "file": "vendors/ss-c-globeop.md",
+      "last_updated": "2026-02-12",
+      "note": "Sub-agent completed research but unable to write vendor file (file write limitation)."
     }
   ],
-  "last_sync": "2026-02-12T10:24:00-05:00"
+  "last_sync": "2026-02-12T12:10:00-05:00"
 }

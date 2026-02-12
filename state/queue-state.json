@@ -1,0 +1,17 @@
+{
+  "total_vendors": 187,
+  "completed": 24,
+  "blocked": 21,
+  "in_progress": 0,
+  "remaining": 143,
+  "last_updated": "2026-02-12T12:10:00+0000",
+  "current_vendor": "",
+  "current_vendor_position": null,
+  "current_vendors": [],
+  "last_completed": "StratiFi Technologies Inc",
+  "last_blocked": "SS&C GlobeOp",
+  "api_cost_today": 0.021,
+  "model": "MiMo-V2-Flash",
+  "cost_threshold": 0.50,
+  "status": "active"
+}

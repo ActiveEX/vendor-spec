@@ -290,10 +290,10 @@
     {
       "name": "Risclarity",
       "slug": "risclarity",
-      "status": "verification_complete",
+      "status": "overview_complete",
       "file": "vendors/risclarity.md",
       "last_updated": "2026-02-12",
-      "note": "SaaS verification complete (10:59 AM EST). Data integration & wealth reporting platform for family offices and RIAs. Website verified (risclarity.com), contact info confirmed (contact@risclarity.com, 844-598-1100). Basic profile created. GitHub: vendors/risclarity.md. Next: Pricing & Features phase."
+      "note": "Product Overview complete (1:33 PM EST). Strategic analysis documented: 9 Add-On Products (GL Link, Re-Allocator, Back Office Services, Client Reporting, Data Aggregation, New Account Onboarding, Custom Dashboards, Management Reporting, CRM Integrations), 7 Strengths (family office-specific design, DataHub integration hub, 20-40hr/month savings), 5 Weaknesses (no public pricing, niche focus, implementation complexity), Use Cases (Ideal: MFOs with $500M+ AUM / Not Ideal: Small RIAs <$500M), 5 Key Differentiators (middleware positioning, GL Link automation, service+software model), 5 Alternatives (Addepar, Black Diamond, FactSet, Tamarac, Proprietary). GitHub: https://github.com/ActiveEX/vendor-spec/blob/main/vendors/risclarity.md (commit 187f7ab). Next: Integrations assessment (Swimlane 5)."
     },
     {
       "name": "Redtail Technology",

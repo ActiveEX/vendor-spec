@@ -239,3 +239,286 @@ No free trial publicly advertised. Firms can request a demo to evaluate the plat
 **Researched By:** OpenClaw AI Agent (Product Overview Swimlane)  
 **Model:** Kimi K2.5 (Strategic Analysis)  
 **Next Step:** Integrations Assessment
+
+---
+
+## Integration Overview
+
+Skience offers **14 documented integrations** with deep, bi-directional connections to leading wealth management technology providers. The platform emphasizes data consolidation from **200+ sources** for account data aggregation, though specific data sources beyond the key integrations are not publicly documented.
+
+### Integration Categories
+
+- **Clearing & Custody:** 4 integrations (Fidelity, Pershing, Schwab, TD Ameritrade)
+- **Managed Account Platforms:** 2 integrations (Envestnet, Morningstar)
+- **Financial Planning:** 1 integration (MoneyGuidePro)
+- **Technology Tools:** 7 integrations (Redtail, DocuSign, EVS, Quik!, Salesforce, RightBRIDGE, Laser App)
+
+---
+
+## Key Integrations (Documented)
+
+### 1. Salesforce CRM Platform
+
+**Type:** Native (Platform Foundation)  
+**Direction:** Foundational Platform  
+**What It Does:** Skience is built as a managed package on the Salesforce platform, leveraging Salesforce Lightning, Sales Cloud, Service Cloud, Financial Services Cloud, and Salesforce Communities.  
+**Data Synced:** All CRM data (contacts, accounts, opportunities, tasks, activities), workflow automation, custom objects  
+**Setup Complexity:** High (requires Salesforce license for ISV version; embedded in SkienceONE)  
+**Limitations:**  
+- Full Skience (ISV) requires active Salesforce CRM license (additional cost)
+- SkienceONE includes embedded Salesforce (no separate license needed)
+- Learning curve for advisors unfamiliar with Salesforce interface  
+**Documentation:** https://skience.com/integrations/ | https://appexchange.salesforce.com/appxListingDetail?listingId=a0N30000000qDzEEAU
+
+---
+
+### 2. Fidelity Clearing & Custody Solutions
+
+**Type:** Native / API  
+**Direction:** Bi-directional  
+**What It Does:**  
+- **For Broker-Dealers:** New account opening with straight-through processing, account maintenance, prospect prefill, daily posting of account data, integration with Business Process Manager (BPM), single sign-on (SSO) with contextual links to Integrated Cashiering Platform, Service Center, Statements, and Reporting  
+- **For RIAs:** Prefill client data from Salesforce for new account opening using prospect prefill or DocuSign DIY, daily posting of Fidelity account data, SSO with contextual links to Fidelity platforms  
+**Data Synced:** Account data (daily), client demographics, holdings, transactions, account opening documents, maintenance requests  
+**Setup Complexity:** Medium (requires Fidelity custodial relationship and API credentials)  
+**Limitations:**  
+- Requires active Fidelity Clearing & Custody relationship
+- Account opening features vary by RIA vs. Broker-Dealer setup  
+**Documentation:** https://skience.com/integrations/ (Clearing & Custody Firms tab)
+
+---
+
+### 3. Pershing Clearing & Custody (BNY Mellon)
+
+**Type:** Native / API  
+**Direction:** Bi-directional  
+**What It Does:**  
+- **For Broker-Dealers:** New account opening using straight-through processing via guided interview workflow within Skience platform  
+- **For RIAs:** Streamlined forms-based new account opening with guided workflow, prefills data from Salesforce, reduces errors for back office, delivers digital paperwork to clients, daily posting of Pershing account data  
+**Data Synced:** Account data (daily), client demographics, holdings, transactions, account opening documents  
+**Setup Complexity:** Medium (requires Pershing custodial relationship and platform access)  
+**Limitations:**  
+- Requires active Pershing relationship (either Clearing Services for BDs or Wealth Advisor Solutions for RIAs)  
+**Documentation:** https://skience.com/integrations/ (Clearing & Custody Firms tab)
+
+---
+
+### 4. Charles Schwab Advisor Services
+
+**Type:** Native / API  
+**Direction:** Bi-directional  
+**What It Does:** For RIAs: Prefills client data from Salesforce into Schwab forms for new account opening, enables advisor's own DocuSign for expedited new account processing, daily posting of Schwab account data  
+**Data Synced:** Account data (daily), client demographics, holdings, transactions, account opening documents  
+**Setup Complexity:** Medium (requires Schwab custodial relationship)  
+**Limitations:**  
+- RIA-focused integration (Broker-Dealer support not documented)
+- Requires active Schwab custodial relationship  
+**Documentation:** https://skience.com/integrations/ (Clearing & Custody Firms tab)
+
+---
+
+### 5. TD Ameritrade Institutional
+
+**Type:** Native / API  
+**Direction:** Bi-directional  
+**What It Does:** For RIAs: Prefills client data from Salesforce into TD Ameritrade forms for new account opening, supports DocuSign communication with TD Ameritrade for expedited new account processing, daily posting of TD Ameritrade account data  
+**Data Synced:** Account data (daily), client demographics, holdings, transactions, account opening documents  
+**Setup Complexity:** Medium (requires TD Ameritrade custodial relationship)  
+**Limitations:**  
+- RIA-focused integration (Broker-Dealer support not documented)
+- Requires active TD Ameritrade Institutional relationship
+- TD Ameritrade merged with Schwab (long-term integration roadmap unclear)  
+**Documentation:** https://skience.com/integrations/ (Clearing & Custody Firms tab)
+
+---
+
+### 6. Envestnet Platform
+
+**Type:** Native / API  
+**Direction:** Bi-directional  
+**What It Does:** Prefills and generates investment proposals at Envestnet, automatically includes Statement of Investment Selection and related documents for client digital signature alongside new account applications from custodian/clearing firm, supports single sign-on (SSO) for seamless advisor workflow  
+**Data Synced:** Client demographics, detailed holdings information, investment proposals, Statement of Investment Selection documents  
+**Setup Complexity:** Medium (requires Envestnet platform access)  
+**Limitations:**  
+- Requires active Envestnet subscription
+- Proposal generation tied to Envestnet platform capabilities  
+**Documentation:** https://skience.com/integrations/ (Managed Account Platforms tab)
+
+---
+
+### 7. Morningstar Advisor Workstation
+
+**Type:** Native / API  
+**Direction:** Bi-directional  
+**What It Does:** Expedites investment proposal process with single sign-on (SSO), automatically generates proposals incorporating client demographic and detailed holdings information, completed proposal is returned and stored in Skience  
+**Data Synced:** Client demographics, detailed holdings information, investment proposals, performance data  
+**Setup Complexity:** Medium (requires Morningstar Advisor Workstation subscription)  
+**Limitations:**  
+- Requires active Morningstar Advisor Workstation subscription
+- Proposal storage relies on Skience document management  
+**Documentation:** https://skience.com/integrations/ (Managed Account Platforms tab)
+
+---
+
+### 8. Envestnet | MoneyGuidePro
+
+**Type:** Native / API  
+**Direction:** Bi-directional  
+**What It Does:** Expedites financial planning process by automatically generating a plan incorporating client demographic and detailed holdings information, MoneyGuide's Health Meter dashboard is automatically updated and available within Skience to present advisors with quick view of clients' progress against goals  
+**Data Synced:** Client demographics, detailed holdings information, financial plan data, goal tracking (Health Meter dashboard)  
+**Setup Complexity:** Medium (requires MoneyGuidePro subscription)  
+**Limitations:**  
+- Requires active MoneyGuidePro subscription
+- Health Meter dashboard embedded view may have limitations vs. full platform  
+**Documentation:** https://skience.com/integrations/ (Financial Planning Tools tab)
+
+---
+
+### 9. Redtail CRM
+
+**Type:** Native  
+**Direction:** Bi-directional  
+**What It Does:** For firms leveraging Redtail as their CRM, Skience delivers native integration to pass contact and family information between systems, creates better digital onboarding experience for advisors and their clients  
+**Data Synced:** Contact data, family/household relationships, client demographic information  
+**Setup Complexity:** Easy to Medium (requires Redtail CRM subscription)  
+**Limitations:**  
+- Designed for firms using Redtail as primary CRM (alternative to Salesforce-based CRM)
+- Integration scope focused on contact/family data (not full CRM feature parity)  
+**Documentation:** https://skience.com/integrations/ (Technology Tools tab) | https://skience.com/blog/skience-and-redtail-what-our-integration-means-for-advisors-skplatform/
+
+---
+
+### 10. DocuSign
+
+**Type:** Native / Embedded  
+**Direction:** Bi-directional  
+**What It Does:** DocuSign's industry-leading digital signature capabilities are embedded deeply within Skience's guided workflows for new account opening and other forms-driven processes. Within Skience, the advisor can initiate, monitor, and complete the digital signing process including multiple account applications and proposals to deliver a streamlined signing experience for clients  
+**Data Synced:** Signature status, completed documents, signature timestamps, audit trails  
+**Setup Complexity:** Easy (DocuSign embedded in Skience workflows)  
+**Limitations:**  
+- Requires DocuSign subscription (or may be included in Skience licensing - confirm with vendor)
+- Document templates must be configured for DocuSign integration  
+**Documentation:** https://skience.com/integrations/ (Technology Tools tab)
+
+---
+
+### 11. Electronic Verification Systems (EVS)
+
+**Type:** API  
+**Direction:** One-way (outbound for verification requests)  
+**What It Does:** Automates client due diligence process to perform real-time checks of OFAC and AML watchlists and fraud protection based on client demographic information during account opening  
+**Data Synced:** Client demographic information (name, address, SSN/TIN), verification status, watchlist check results  
+**Setup Complexity:** Easy to Medium (requires EVS subscription and API credentials)  
+**Limitations:**  
+- Requires active EVS subscription
+- Real-time checks depend on EVS service availability
+- Compliance checks limited to EVS-supported databases  
+**Documentation:** https://skience.com/integrations/ (Technology Tools tab) | https://skience.com/press-releases/skience-partners-with-evs/
+
+---
+
+### 12. Quik! Forms
+
+**Type:** Native / Embedded  
+**Direction:** Bi-directional  
+**What It Does:** Quik!Forms is at the heart of Skience's new account opening and account maintenance workflows. Offers comprehensive set of electronic forms from hundreds of product providers and custodians, as well as support for advisor's custom forms, all pre-fillable from Skience and may be printed or sent to client for digital signature  
+**Data Synced:** Form templates, pre-filled form data, completed forms, form libraries from 100+ providers  
+**Setup Complexity:** Easy (Quik! embedded in Skience workflows)  
+**Limitations:**  
+- Requires Quik! subscription (or may be included in Skience licensing - confirm with vendor)
+- Form availability depends on Quik! library coverage
+- Custom forms require configuration  
+**Documentation:** https://skience.com/integrations/ (Technology Tools tab)
+
+---
+
+### 13. CapitalROCK's RightBRIDGE (Regulation Best Interest System)
+
+**Type:** Native / API  
+**Direction:** Bi-directional  
+**What It Does:** Firms can easily integrate the Regulation Best Interest System into their workflow process with a click of a button. Bi-directional integration syncs data between both systems providing single platform to complete product recommendations, prefill and send paperwork for client approval and signatures, perform suitability checks, and open new accounts without re-keying data and with uninterrupted user access  
+**Data Synced:** Product recommendations, suitability analysis results, Reg BI compliance documentation, client disclosures  
+**Setup Complexity:** Easy to Medium (requires RightBRIDGE subscription)  
+**Limitations:**  
+- Requires active RightBRIDGE subscription
+- Reg BI compliance features specific to broker-dealer requirements  
+**Documentation:** https://skience.com/integrations/ (Technology Tools tab)
+
+---
+
+### 14. Laser App (Forms & Account Opening)
+
+**Type:** Native / Embedded  
+**Direction:** Bi-directional  
+**What It Does:** Client onboarding with Laser App forms using eSignature powered by DocuSign as part of end-to-end digital account opening process  
+**Data Synced:** Form templates, pre-filled form data, completed account opening documents  
+**Setup Complexity:** Easy to Medium (requires Laser App subscription or access)  
+**Limitations:**  
+- Requires Laser App access (or included in Skience licensing - confirm with vendor)
+- Form availability depends on Laser App library  
+**Documentation:** https://skience.com/skience-platform/ (mentioned in platform features)
+
+---
+
+## Integration Types Available
+
+- **Native Integrations:** Built directly into Skience platform (Salesforce, custodians, Redtail, DocuSign, Quik!, Laser App, RightBRIDGE)
+- **API Integrations:** REST/SOAP APIs for data exchange (custodians, Envestnet, Morningstar, MoneyGuidePro, EVS)
+- **Embedded Integrations:** Third-party tools embedded in Skience workflows (DocuSign, Quik!, Laser App)
+- **Single Sign-On (SSO):** Contextual links with SSO to partner platforms (Fidelity, Envestnet, Morningstar, MoneyGuidePro)
+- **Custom Integrations:** Developer tools available for firms to build custom connections (full Skience ISV only)
+
+---
+
+## Data Consolidation (200+ Sources)
+
+Skience's Data Consolidation and Replication solution automatically gathers client account data from 200+ sources including:
+- Clearing and custodial partners (Fidelity, Pershing, Schwab, TD Ameritrade, others not publicly listed)
+- Financial planning tools (MoneyGuidePro, Morningstar, others)
+- Managed account platforms (Envestnet, others)
+- Industry data utilities (not publicly specified)
+
+**Note:** The full list of 200+ data sources is not publicly documented. Firms should contact Skience directly for specific data source availability.
+
+---
+
+## API & Developer Information
+
+**API Availability:** Custom integrations supported for full Skience (ISV) deployments via Salesforce platform APIs and Skience developer tools  
+**Developer Portal:** Not publicly available (enterprise clients work directly with Skience implementation team)  
+**Rate Limits:** Not publicly documented  
+**Authentication:** Salesforce OAuth 2.0 for platform access; API keys for third-party integrations  
+**Documentation Quality:** Integration details available on public website; technical API documentation behind client login  
+**Limitations:** Custom integrations require Skience consulting services; SkienceONE has limited customization vs. full ISV
+
+---
+
+## Support & Documentation
+
+**Support Channels:**
+- Phone: 866-754-3623
+- Email: info@skience.com
+- Implementation support included with deployment
+- Ongoing support via dedicated account team
+
+**Documentation:**
+- Public integrations overview: https://skience.com/integrations/
+- Technical documentation: Available to clients via secure portal
+- Knowledge base: Available to clients (login required)
+
+**Training:**
+- Implementation training included with deployment
+- Ongoing training via account team
+- User guides available to clients
+
+**Community:**
+- No public user community documented
+- Client networking via Skience events and webinars
+
+---
+
+**Integrations Assessment Completed:** February 12, 2026  
+**Researched By:** OpenClaw AI Agent (Integrations Assessment Swimlane)  
+**Model:** Claude Opus 4.6 (Exhaustive Integration Documentation)  
+**Total Integrations Documented:** 14 (with 200+ data consolidation sources noted)  
+**Next Step:** Final Validation

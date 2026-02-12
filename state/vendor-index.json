@@ -1,0 +1,145 @@
+{
+  "vendors": [
+    {
+      "name": "Redtail CRM",
+      "slug": "redtail-crm",
+      "status": "complete",
+      "file": "vendors/redtail-crm.md",
+      "last_updated": "2026-02-10"
+    },
+    {
+      "name": "Wealthbox CRM",
+      "slug": "wealthbox-crm",
+      "status": "complete",
+      "file": "vendors/wealthbox-crm.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "AdvicePay",
+      "slug": "advicepay",
+      "status": "complete",
+      "file": "vendors/advicepay.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "Advicent",
+      "slug": "advicent",
+      "status": "complete",
+      "file": "vendors/advicent.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "AdvisorTouch",
+      "slug": "advisortouch",
+      "status": "complete",
+      "file": "vendors/advisortouch.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "AdvisorWebsites",
+      "slug": "advisorwebsites",
+      "status": "blocked",
+      "file": "vendors/advisorwebsites.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "AdvisorEngine",
+      "slug": "advisor-engine",
+      "status": "blocked",
+      "file": "vendors/advisor-engine.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "AdvisorStream",
+      "slug": "advisorstream",
+      "status": "blocked",
+      "file": "vendors/advisorstream.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "Advisor Tech Partners",
+      "slug": "advisor-tech-partners",
+      "status": "blocked",
+      "file": "vendors/advisor-tech-partners.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "Advisys",
+      "slug": "advisys",
+      "status": "complete",
+      "file": "vendors/advisys.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "Altruist",
+      "slug": "altruist",
+      "status": "complete",
+      "file": "vendors/altruist.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "Kwanti",
+      "slug": "kwanti",
+      "status": "complete",
+      "file": "vendors/kwanti.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "Income Lab",
+      "slug": "income-lab",
+      "status": "complete",
+      "file": "vendors/income-lab.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "Nitrogen",
+      "slug": "nitrogen",
+      "status": "complete",
+      "file": "vendors/nitrogen.md",
+      "last_updated": "2026-02-11"
+    },
+    {
+      "name": "Advyzon",
+      "slug": "advyzon",
+      "status": "blocked",
+      "file": "vendors/advyzon.md",
+      "last_updated": "2026-02-12"
+    },
+    {
+      "name": "Betterment for Advisors",
+      "slug": "betterment-for-advisors",
+      "status": "complete",
+      "file": "vendors/betterment-for-advisors.md",
+      "last_updated": "2026-02-12"
+    },
+    {
+      "name": "FreeBusy",
+      "slug": "freebusy",
+      "status": "complete",
+      "file": "vendors/freebusy.md",
+      "last_updated": "2026-02-12"
+    },
+    {
+      "name": "Orion",
+      "slug": "orion",
+      "status": "complete",
+      "file": "vendors/orion.md",
+      "last_updated": "2026-02-12"
+    },
+    {
+      "name": "Addepar",
+      "slug": "addepar",
+      "status": "blocked",
+      "file": "vendors/addepar.md",
+      "last_updated": "2026-02-12"
+    },
+    {
+      "name": "GoToMeeting",
+      "slug": "gotomeeting",
+      "status": "complete",
+      "file": "vendors/gotomeeting.md",
+      "last_updated": "2026-02-12"
+    }
+  ],
+  "last_sync": "2026-02-12T07:45:00-05:00"
+}
